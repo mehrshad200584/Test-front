@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Software Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #0a0f1c;
+      color: #00f0ff;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0a0f1c;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00f0ff;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f0ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00f0ff;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .start-btn {
+      background-color: #00f0ff;
+      color: #0a0f1c;
+    }
+
+    .contact-btn {
+      border: 2px solid #00f0ff;
+      color: #00f0ff;
+      background-color: transparent;
+    }
+
+    .scroll-down {
+      margin-top: 40px;
+      font-size: 16px;
+      color: #00f0ff;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 22px;
+      }
+
+      .buttons a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ARMAN</div>
+    <nav>
+      <a href="#">خانه</a>
+      <a href="#">درباره ما</a>
+      <a href="#">خدمات</a>
+      <a href="#">ارتباط</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="your-image.png" alt="Arman Tech Illustration">
+    <h1>FROM ARMAN TO ACTION</h1>
+    <div class="buttons">
+      <a href="#" class="start-btn">شروع کنید</a>
+      <a href="#" class="contact-btn">ارتباط</a>
+    </div>
+    <div class="scroll-down">اسرول کنید ↓</div>
+  </section>
+
+</body>
+</html>
