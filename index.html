@@ -9,9 +9,23 @@
     body {
       margin: 0;
       font-family: 'Vazirmatn', sans-serif;
-      background-color: #0a0f1c;
+      background-image: url('background-image.png');
+      background-size: cover;
+      background-position: center;
       color: #00f0ff;
       overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 15, 28, 0.45); /* لایه نیمه شفاف برای کمرنگ کردن عکس */
+      z-index: 0;
+      pointer-events: none;
     }
 
     header {
@@ -19,7 +33,6 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: #0a0f1c;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -50,14 +63,20 @@
 
     .hero {
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px 20px 20px;
+      position: relative;
+      z-index: 1;
     }
 
     .hero img {
-      max-width: 500px;
-      width: 100%;
+      max-width: 260px;
+      width: 60vw;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 18px;
+      margin-top: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero h1 {
@@ -69,16 +88,10 @@
     .buttons {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 16px;
       flex-wrap: wrap;
-    }
-
-    .buttons a {
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      margin-top: 10px;
+      margin-bottom: 0;
     }
 
     .start-btn {
@@ -134,11 +147,11 @@
   </header>
 
   <section class="hero">
-    <img src="your-image.png" alt="Arman Tech Illustration">
+    <img src="center-image.png" alt="Arman Tech Illustration">
     <h1>FROM ARMAN TO ACTION</h1>
     <div class="buttons">
-      <a href="#" class="start-btn">شروع کنید</a>
-      <a href="#" class="contact-btn">ارتباط</a>
+      <a href="#" class="start-btn">شروع پروژه</a>
+      <a href="#" class="contact-btn">تماس با ما</a>
     </div>
     <div class="scroll-down">اسرول کنید ↓</div>
   </section>
